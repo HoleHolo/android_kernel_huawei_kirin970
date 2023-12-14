@@ -464,7 +464,8 @@ void read_watch_reg_value(struct hisi_fb_data_type *hisifd)
 		LCDKIT_INFO("lcd has been powered off, do nothing\n");
 		return;
 	}
-	for (int i = 0; i < try_times; i++) {
+	int i;
+	for (i = 0; i < try_times; i++) {
 		mdelay(2); // delay 2ms
 		LCDKIT_PANEL_CMD_REQUEST();
 		hisifb_activate_vsync(hisifd);
