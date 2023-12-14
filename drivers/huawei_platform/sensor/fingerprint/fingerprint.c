@@ -1738,7 +1738,7 @@ static int fp_ioc_get_bigdata(struct fp_data *fp, void __user *argp)
 }
 
 /* active te single when using fingeprint , fix fingeprint blink question .*/
-static int fp_ioc_update_te()
+static int fp_ioc_update_te(void)
 {
 	de_open_update_te();
 	return FP_RETURN_SUCCESS;
