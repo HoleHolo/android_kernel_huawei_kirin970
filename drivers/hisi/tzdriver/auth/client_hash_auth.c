@@ -49,7 +49,7 @@ static unsigned char g_hidl_calc_hash[SHA256_DIGEST_LENTH];
 static bool g_hidl_hash_calced = false;
 DEFINE_MUTEX(g_hidl_calc_lock);
 
-static int check_hidl_code_hash()
+static int check_hidl_code_hash(void)
 {
 	unsigned char digest[SHA256_DIGEST_LENTH] = {0};
 

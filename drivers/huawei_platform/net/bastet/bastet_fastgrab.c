@@ -388,7 +388,7 @@ void regist_msg_fun(notify_event *notify)
 	g_notifier = notify;
 }
 
-static void notify_fastgrab_chr()
+static void notify_fastgrab_chr(void)
 {
 	struct res_msg_head msg;
 
