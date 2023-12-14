@@ -33,7 +33,7 @@ struct fscrypt_policy_type {
 } __packed;
 
 #ifdef CONFIG_HWDPS
-static const int RESERVED_DATA_LEN = 8;
+#define RESERVED_DATA_LEN 8
 
 /* dps crypto policy for f2fs */
 struct fscrypt_dps_policy {
