@@ -1546,7 +1546,7 @@ static int hisi_aod_start(struct aod_data_t *aod_data, const void __user* arg)
 	return 0;
 }
 
-static void aod_mem_free()
+static void aod_mem_free(void)
 {
 	int i;
 
