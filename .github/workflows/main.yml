@@ -70,4 +70,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Image.gz
-        path: "Image.gz"
+        path: "out/arch/arm64/boot/Image.gz"
